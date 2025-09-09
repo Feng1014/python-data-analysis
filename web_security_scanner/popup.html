@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Security Scanner</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 10px;
+            width: 300px;
+        }
+
+        button {
+            margin: 5px;
+        }
+
+        #result {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Security Scanner</h1>
+    <button id="scanButton">Scan Current Page</button>
+    <input type="text" id="customRule" placeholder="Custom header to check (e.g., X-XSS-Protection)">
+    <button id="customScan">Check Custom</button>
+    <div id="result"></div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
